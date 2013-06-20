@@ -1,0 +1,18 @@
+Bot für den sechsten Programmierwettbewerb von freiesMagazin („Die verbotene Insel“)
+<http://www.freiesmagazin.de/sechster_programmierwettbewerb>
+Copyright (C) 2013 Markus Brenneis
+
+Dieses Programm ist freie Software. Sie können es unter den Bedingungen der GNU General Public License, wie von der Free Software Foundation veröffentlicht, weitergeben und/oder modifizieren, entweder gemäß Version 3 der Lizenz oder (nach Ihrer Option) jeder späteren Version.
+
+Die Veröffentlichung dieses Programms erfolgt in der Hoffnung, daß es Ihnen von Nutzen sein wird, aber OHNE IRGENDEINE GARANTIE, sogar ohne die implizite Garantie der MARKTREIFE oder der VERWENDBARKEIT FÜR EINEN BESTIMMTEN ZWECK. Details finden Sie in der GNU General Public License.
+
+Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Programm erhalten haben. Falls nicht, siehe <http://www.gnu.org/licenses/>. 
+
+
+Strategiebeschreibung:
+
+Der Bot prüft zunächst alle mit höchsten zwei Schritten erreichbar Felder auf ihre Lohnenswertigkeit. Die Lohnenswertigkeit ist ein ganzzahliger Wert, der berücksichtigt, wie viele Felder trockengelegt werden können, wenn sich der Bot dorthin bewegt, und ob das Feld sicher ist (unsicher ist es z. B., wenn es in einer Ecke liegt oder wenn das Feld früher schonmal überflutet war und somit bei fortgeschrittenem Spiel die Gefahr besteht, dass es in der nächsten Runde zweimal überflutet wird). Der Bot bewegt sich dann auf dieses Feld und legt dann soviele Felder wie möglich trocken.
+Darf der Bot danach noch mindestens eine Aktion durchführen, sucht er nach überfluteten Feldern in der näheren und weiteren Umgebung, und bewegt sich in Richtung des Feldes, das sich am meisten lohnt.
+
+TODO
+einfach mal den Bot beobachten, ob der keinen Blödsinn macht
